@@ -6,17 +6,16 @@
   </head>
 
   <body>
-    <h1>charity_quiz</h1>
+    <h1>Charity Quiz</h1>
     
 
 <form method = "POST" action = "/charity">
 <p>What is your name? <input type = "text" name = "username"></p>
-<p>Would you like to support a human or animal charity? <input type ="text" name = "question"></p>
-all_the_medicines = [
-  #<charity_human:0x007fb739b1af88 @id=1, @name="mentally ill" @group="antibiotic">,
-  #<charity_human:0x007fb739b1af88 @id=2, @name="labor" @group="anti-inflammatory">,
-  #<charity_human:0x007fb739b1af88 @id=3, @name="children" @group="anti-histamine">
-]
+<h3>Would you like to support a human or animal charity? </h3>
+      <input type = "radio" name = "q1" value = "1">human<br>
+      <input type = "radio" name = "q1" value = "2">animal<br>
+  
+
 <input type="submit">  
   </form> 
  

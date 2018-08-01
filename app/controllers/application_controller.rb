@@ -12,8 +12,9 @@ class ApplicationController < Sinatra::Base
 post '/charity' do
   @name = params[:username]
   @name = params[:question]
+  #@name = params[:question2]
+  #@name = params[:question3]
   
-  "A charity that best suits your preferences is #{charity}"
   end
   
 end
