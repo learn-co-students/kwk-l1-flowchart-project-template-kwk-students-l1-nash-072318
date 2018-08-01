@@ -4,7 +4,7 @@ attr_accessor :name, :food
 
 @allfood = []
 
-def initialize(name, food, q1, q2, q3, q4, q5, q6, q7)
+def initialize(name, q1, q2, q3, q4, q5, q6, q7)
   @name = name
   @food = food 
   @q1 = q1
@@ -44,5 +44,4 @@ end
 
 end
 
-test = Food.new("fatima", "food", 1, 1, 1, 1, 1,1, 1)
-puts test.results
+#puts test.results

@@ -36,7 +36,7 @@ post '/quiz' do
   elsif @q1 + @q2 + @q3 + @q4 + @q5 + @q6 + @q7 < 42
     @food = "Pork Chops With Rasberry Sauce"
    "https://www.allrecipes.com/recipe/53733/pork-chops-with-raspberry-sauce/?internalSource=recipe%20hub&referringId=1058&referringContentType=recipe%20hub&clickId=cardslot%20117"
-  else @q1 + @q2 + @q3 + @q4 + @q5 + @q6 + @q7 < 43
+  else @q1 + @q2 + @q3 + @q4 + @q5 + @q6 + @q7 > 43
     @food = "Here is a website to make foods with the things you already have!"
    "https://www.allrecipes.com/recipes/1058/fruits-and-vegetables/fruits/?page=6"
    
