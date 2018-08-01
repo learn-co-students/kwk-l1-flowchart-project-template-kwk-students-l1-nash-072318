@@ -1,4 +1,6 @@
 class Quiz
+  
+<h1><br><center>Hello <%=@name%>!</center></h1>
 
 attr_accessor :name, :age, :breed 
 
