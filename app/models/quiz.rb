@@ -6,11 +6,15 @@ attr_accessor :name, :age, :breed
 
 @alldogs = []
 
-def initialize(name, q1, q2, q3)
+def initialize(name, q1, q2, q3, q4, q5, q6, q7)
   @name = name
   @q1 = q1
   @q2 = q2
   @q3 = q3
+  @q4 = q4
+  @q5 = q5
+  @q6 = q6
+  @q7 = q7
 
 end
 
