@@ -9,6 +9,14 @@ get '/food_health' do
   erb:food_health
 end
 
+get '/contact' do
+  erb:contact
+end
+
+get '/aboutus' do
+  erb:aboutus
+end
+
 post '/quiz' do
  @name = params[:name]
   @food = params[:food] 
@@ -21,7 +29,7 @@ post '/quiz' do
   @q7 = params[:q7].to_i 
 
 
-  if @q1 + @q2 + @q3 + @q4 + @q5 + @q6 + @q7 < 9 
+  if @q1 + @q2 + @q3 + @q4 + @q5 + @q6 + @q7 < 8 
     @food = "Strawberry Spinich Salad"
     "https://www.allrecipes.com/recipe/14276/strawberry-spinach-salad-i/?internalSource=recipe%20hub&referringId=1058&referringContentType=recipe%20hub&clickId=cardslot%2023"
   elsif @q1 + @q2 + @q3 + @q4 + @q5 + @q6 + @q7 < 15
