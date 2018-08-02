@@ -21,6 +21,14 @@
   
 }
 
-
+bg3{
+   background-image: url("https://img.freepik.com/free-photo/beautiful-composition-with-palm-leaves-on-yellow-background_24972-68.jpg?size=338&ext=jpg");
+  /*height: 100%;*/
+  /*background-position: center; */
+  background-repeat: no-repeat;
+  background-repeat: repeat-y;
+  /*background-size: cover;*/
+  background-size:100%;
+}
 
 body{font-family:"Courier";}
