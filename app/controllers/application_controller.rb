@@ -5,7 +5,7 @@ class ApplicationController < Sinatra::Base
     set :views, 'app/views'
   end
 
-get '/food_health' do
+get '/' do
   erb:food_health
 end
 
