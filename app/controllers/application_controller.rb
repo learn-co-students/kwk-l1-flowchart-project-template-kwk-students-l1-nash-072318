@@ -33,27 +33,30 @@ post '/results' do
   @length = params[:length].to_i
   @topic = params[:topic].to_i
   @username = params[:username]
+  @read = params[:read].to_i
  # @response = Result.new(params[:username], params[:length].to_i, params[:topic].to_i)
  # @response.results
  # "Your article is #{@response.results}."
-  if @length + @topic <= 4
+  if @length + @topic + @read <= 4
  erb :short_envior
-elsif @length + @topic <= 7
+elsif @length + @topic + @read <= 7
  erb :med_envior
-elsif @length + @topic <= 10
+elsif @length + @topic + @read <= 10
   erb :short_feelgood
-elsif @length + @topic <= 12
+elsif @length + @topic + @read <= 12
  erb :short_womenintech
- elsif @length + @topic <= 14
+ elsif @length + @topic + @read <= 14
  erb :med_feelgood
- elsif @length + @topic <= 15
+ elsif @length + @topic + @read <= 15
  erb :long_envior
- elsif @length + @topic <= 16
+ elsif @length + @topic + @read <= 16
  erb :med_womenintech
- elsif @length + @topic <= 22
+ elsif @length + @topic + @read <= 22
  erb :long_feelgood
- else @length + @topic <= 24
+ elsif @length + @topic + @read <= 24
  erb :long_womenintech
+ else 
+   erb :noread
  end
 
 end
