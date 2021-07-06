@@ -1,0 +1,114 @@
+<html>
+ 
+  <head>
+    <title>Your recommendations!</title>
+  
+   <link rel="stylesheet" href="style.css">
+   </head>
+  <body style="background-color:powderblue;" >
+   <h1> Here is your Personalized Page.</h1> 
+    
+     <div>
+    <% if @genre == "pop" %>
+    <h2>Music: </h2> <h4><a href="https://www.youtube.com/watch?v=hT_nvWreIhg&list=PLMC9KNkIncKvYin_USF1qoJQnIyMAfRxl">pop playlist</a></h4>
+    <% elsif @genre == "popular" %>
+    <h2>music:</h2><h4><a href="https://www.youtube.com/watch?v=aJOTlE1K90k&list=PLI_7Mg2Z_-4I-W_lI55D9lBUkC66ftHMg">popular playlist</a></h4>
+    <% elsif @genre == "indie" %>
+    <h2>music:</h2><h4><a href="https://www.youtube.com/watch?v=od2gyoLF9bg&list=PLOvc47UgH6TA0icm2q8KV2QLQWpHfc7lO">indie playlist</a></h4>
+    <% elsif @genre == "country" %>
+    <h2>music:<h2><h4><a href="https://www.youtube.com/watch?v=zXDAYlhdkyg&list=PL3oW2tjiIxvQW6c-4Iry8Bpp3QId40S5S">country playlist</a></h4>
+    <% elsif @genre == "alternative" %>
+    <h2>music:</h2><h4><a href="https://www.youtube.com/watch?v=jVXauWq9Hwg&list=PLw-VjHDlEOgto2M4-AR-eZsfs92O85Wlw">alternative playlist</a></4>
+    <% else @genre == "classical"%> <h2>music:</h2><h4><a href="https://www.youtube.com/watch?v=jgpJVI3tDbY">classical music</a></h4>
+    <% end %>
+    
+    </div>
+    <div>
+    <% if @time == "morning" %>
+    <p> </p>
+    <% elsif @time == "afternoon" %>
+    <p> </p>
+     <% elsif @time == "night" %>
+     <p> </p>
+     <%end%>
+    </div>
+    <div>
+     <% if @diet == "Soup Diet" %>
+     <h2>Diet Plan:</2><h4><a href="http://www.cabbagesoupdiet.recipes/7-day-cabbage-soup-diet-plan/">Soup Diet</a></4>
+     <% elsif @diet == "calorie limit 1200cal" %>
+     <h2>Diet Plan:</2><h4><a href="http://www.eatingwell.com/article/289245/7-day-heart-healthy-meal-plan-1200-calories/">Claorie Limit</a></4>
+     <% elsif @diet == "Vegan 1500cal" %>
+     <h2>Diet Plan:</h2><h4><a href="http://www.eatingwell.com/article/290644/7-day-vegan-meal-plan-1500-calories/">Vegan</a></4>
+     <% elsif @diet == "Dr. Oz Diet" %>
+     <h2>Diet Plan:</h2><h4><a href="https://www.goodhousekeeping.com/health/diet-nutrition/g4929/21-day-weight-loss-breakthrough-meal-prep-recipes/">Dr.Oz Diet</a></4>
+     <% else @diet == "3-Day Juice Cleanse" %>
+     <h2>Diet Plan:</h2><h4><a href="https://www.doctoroz.com/article/joe-cross-3-day-weekend-juice-cleanse">Juice Cleanse</a></h4>
+     <%end%>
+     </div>
+     <div>
+     <% if @workout == "leg" %>
+     <h2>Workout:</h2><p>25 left lunge hop, 25 right lunge hop, 40 sumo squat, 25 left side leg lift, right side leg lift*25, left bottom leg lift*25, right bottom leg lift*25, 25 sec wall sit</p>
+     <% elsif @workout == "arms" %>
+          <h2>Workout:</h2><p>15 push ups, 15 tricep chair dip, 20 arm circles(usinf 5-8 pound weights), 26 mountain climbers, 45 sec plank</p>
+     <% elsif @workout == "abs" %>
+     <h2>Workout:</h2><p> 40 abdomialcrunches, 40 long arm crunch, 50 russian twist, 40 sec plank </p>
+     <% elsif @workout == "whole-body normal" %>
+     <h2>Workout:</h2><p>  10 kneeling push ups, 20 cross-arm crunch, 10 push ups, 20 jumping squat, 10 side lunge, 10 push-up rotations, 10 side lunges, 60 sec plank, 20 left backward lunge+front kick, 20 right backward lunge+front lunge, 20 high lunge, 30 sec plunk, 30 sec bridges</p>
+     <% else @workout == "whole-body advanced" %>
+     <h2>Workout:</h2><p>15 burpee, 40 cross-arm crunch, 12 push-up rotations, 40 left lunge knee hop, 40 right lunge knee hop, 35 jumping jack, 60 sec plan, 12 decline push-ups, 40 reverse crunch, 15 incline crunch, 45 sec plank </p>
+     <%end%>
+     </div>
+    <div>
+     <% if @quote == "work-out quotes" %>
+     <h2>Quote:</h2><p> “Today I will do what others won’t so tomorrow I can do what others can’t.” - Jerry Rice
+    </p>
+    <h2>Quote:</h2><p> “No matter how slow you go, you are still lapping everyone.” </p>
+    <h2>Quote:</h2><p>“To give anything less than your best is to sacrifice the gift.” </p>
+     <% elsif @quote == "fashion-related" %>
+     <h2>Quote:</h2><p> “In order to be irreplaceable, one must always be different.” - Coco Chanel</p>
+    <h2>Quote:<h2><p> “Give a girl the right shoes and she can conquer the world.” - Marium Manore</p>
+    <h2>Quote:<h2><p> “For beautiful eyes, look for good in others; For beautiful lips, speak only words of kindness; And for poise, walk with the knowledge that you’re never alone.” - Aurory Hepburn </p>
+     <% elsif @quote == "moral/ethics" %>
+     <h2>Quote:</h2></p> “Music is a moral law, it gives soul to the universe, wings to the mind, fight to the imagination, and charm and gaiety to life and everything.” - Plato </p>
+    <h2>Quote:</h2><p> “When history is erased, people’s moral values are also erased.” - Majian</p>
+    <h2>Quote:</h2><p> “The ultimate tester of a moral society is the ring of the world that it leaves to its children” - Dietrien Bonnoetter </p>
+     <% elsif @quote == "well known quotes" %>
+     <h2>Quote:</h2><p> “Be yourself; everyone else is already taken.” - Oscar Wilde</p>
+     <h2>Quote:</h2><p> “No one can make you feel inferior without your consent.” - Eleanor Roosevelt</p>
+     <h2>Quote:</h2><p> “It’s not who you are that holds you back, it’s who you think you’re not.”</p>
+     <%end%>
+     </div>
+    <div>
+    <% if @women == "women in tech" %>
+     <h2>Tech Women:</h2><p>Elaine Chao 
+First asian-american to work in oval office 
+Appointed secretary of labor in 2001
+ <img src="https://timedotcom.files.wordpress.com/2017/06/elaine-chao-trump-mika.jpg" style="width:600px;height:500px;"></p>
+ <h2>Tech Women:</h2><p>Sarah Palin
+is an American politician, commentator, author, and reality television personality, who served as the ninth Governor of Alaska from 2006 until her resignatioi n 2009.</p>
+ <img src="https://cimg.tvgcdn.net/i/r/2015/09/06/a264e00d-507a-4219-98e0-6205ac24b066/resize/900x600/d5c10239e53ee8700b4c6d451fc44116/150906-news-palin.jpg" style="width:400px;height:500px;" >
+
+     <% elsif @women == "women in govt."%>
+     <h2>Govt. Women:<h2><p> Kimberly bryant 
+Founder and executive director of black girls code 
+ <img src= https://wi-images.condecdn.net/image/NqMB4jkoQl3/crop/810/f/los-angeles-ca-november-14-ceo-black-girls-code-kimberly-bryant-poses-backstage-at-glamour-women-of-the-year-2016-live-summit-at-neuehouse-hollywood-on-november-14-2016-in-los-angeles-california-photo-by-jeff-vespagetty-images-for-glamour.jpg style="width:400px;height:500px"></p>
+ 
+ <h2>Govt. Women:<h2><p> Julie larson-green
+Chief experience, officer experience organization at microsoft 
+<img src= http://i1.cdnds.net/13/27/618x368/tech-julie-larson-green.jpg  
+style="width:400px;height:500px"></p>
+ 
+     <% elsif @women == "women in business" %>
+     <h2>Business Women:</h2><p> Wendy Kopp 
+Founder of teach for america
+<img src=http://howgreatwomenlead.com/img/howgreatwomenlead/medium/22.jpg style="width:400;height:500"> 
+</p>
+<h2>Business Women:</h2><p> Geisha Williams
+she president and CEO of the Pacific Gas and Electric Company since March 2017. 
+<img src=  https://assets.bwbx.io/images/users/iqjWHBFdfxIU/imsUSsb.lzl4/v1/1000x-1.jpg style="width:400;height:500"></p>
+     <% else @women == "women in media " %>
+    
+    <%end%>
+    </div>
+  </body>
+</html>
