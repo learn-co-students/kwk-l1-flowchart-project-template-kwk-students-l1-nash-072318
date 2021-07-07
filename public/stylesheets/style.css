@@ -1,0 +1,43 @@
+.border{
+  border-style: dotted;
+}
+
+.bg{
+  background-image: url("https://best-wallpaper.net/wallpaper/1920x1200/1706/Summer-fruit-strawberry-bowl-table_1920x1200.jpg");
+  height: 100%;
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg2{
+   background-image: url("https://img.freepik.com/free-photo/beautiful-composition-with-palm-leaves-on-yellow-background_24972-68.jpg?size=338&ext=jpg");
+  /*height: 100%;*/
+  /*background-position: center; */
+  background-repeat: no-repeat;
+  background-repeat: repeat-y;
+  /*background-size: cover;*/
+  background-size:100%;
+  
+}
+
+.bg3{
+   background-image: url("https://i.pinimg.com/originals/c7/21/55/c72155e7c029ccfd207719b1d292e6a6.jpg");
+  /*height: 100%;*/
+  /*background-position: center; */
+  background-repeat: no-repeat;
+  background-repeat: repeat-y;
+  /*background-size: cover;*/
+  background-size:100%;
+}
+
+.bg3{
+   background-image: url("https://i.pinimg.com/originals/c7/21/55/c72155e7c029ccfd207719b1d292e6a6.jpg");
+  /*height: 100%;*/
+  /*background-position: center; */
+  background-repeat: no-repeat;
+  background-repeat: repeat-y;
+  /*background-size: cover;*/
+  background-size:100%;
+}
+body {font-family: "Courier";}
